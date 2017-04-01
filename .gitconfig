@@ -1,4 +1,17 @@
 [alias]
+	bosslog = "!f() { git log --pretty=oneline --decorate --no-merges $1...$2; }; f"
+
+  # Merge base
+  mb = "!f() { git merge-base $1; }; f"
+
+  # Previous branch
+  prev = checkout -
+
+  # Revert
+  rv = "!f() {git revert $1; }; f"
+
+  # Edit mode
+  settings = config --global –edit
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit

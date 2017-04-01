@@ -12,3 +12,14 @@ Thumbs.db
 # Files that might appear on external disks
 .Spotlight-V100
 .Trashes
+
+# Authentication/authorization
+credentials
+
+# Logs
+logs/
+
+# IDEs and Editorss
+.vscodeignore
+typings/
+jsconfig.json
